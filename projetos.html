@@ -140,6 +140,45 @@
 </section>
 
 
+<!-- Seção de Contato Rápido -->
+<section class="w-full">
+  <div class="grid grid-cols-1 lg:grid-cols-2">
+
+    <!-- Lado esquerdo -->
+    <div class="bg-[#FDB913] py-5 flex items-center justify-center text-center">
+      <div>
+        <h3 class="text-gray-900 text-lg font-semibold uppercase tracking-wide">
+          Podemos ajudar?
+        </h3>
+        <h4 class="text-gray-900 text-3xl font-extrabold mt-1">
+          (51) xxxx-xxxx
+        </h4>
+      </div>
+    </div>
+
+    <!-- Lado direito -->
+    <div class="bg-[#2D2D2D] py-5 px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="text-center md:text-left">
+        <h4 class="text-white text-lg text-center font-bold uppercase">Seu sonho começa <br>com um click</h4>
+        <p class="text-gray-300 text-sm mt-2">Clique no botão ao lado e peça seu orçamento</p>
+      </div>
+
+      <!-- WhatsApp Button -->
+      <div class="flex justify-center items-center mt-3 md:mt-0">
+        <a href="https://wa.me/xxxx-xxxx" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold text-lg text-center px-8 py-4 rounded-lg">
+        💬 Falar no WhatsApp
+        </a>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
 <!-- Footer (rodapé completo)-->
 <footer class="bg-[#111] text-gray-300 py-16">
   <div class="container mx-auto px-6">
@@ -152,7 +191,7 @@
           <span class="w-1 h-5 bg-yellow-500 mr-2"></span> SOBRE NÓS
         </h3>
 
-        <img src="images/logo/footer-logo.png" alt="Sinai Pedras" class="w-[200px] mb-4">
+        <img src="images\logo\footer-logo.png" alt="Sinai Pedras" class="w-[200px] mb-4">
 
         <p class="leading-relaxed text-sm">
           "Há mais de 20 anos no mercado, a Sinai Pedras é referência em colocação de basalto e revestimentos 
@@ -194,20 +233,20 @@
 
         <p class="text-sm leading-relaxed">
           Contato para pedidos e orçamentos:<br><br>
-          Residencial: <span class="font-semibold">(51) 3443-4669</span><br>
-          Whatsapp: <span class="font-semibold">(51) 9 9735-1371</span><br>
-          Whatsapp: <span class="font-semibold">(51) 9 8065-4398</span><br>
-          E-mail: <span class="font-semibold">Sinai.pedras@gmail.com</span>
+          Residencial: <span class="font-semibold">(51) xxxx-xxxx</span><br>
+          Whatsapp: <span class="font-semibold">(51) xxxx-xxxx</span><br>
+          Whatsapp: <span class="font-semibold">(51) xxxx-xxxx</span><br>
+          E-mail: <span class="font-semibold">xxxxxxxx@xxxxx.xxxx</span>
         </p>
       </div>
 
     </div>
   </div>
 </footer>
-
   <div class="bg-[#FDB913] text-center py-4">
     <p class="text-black text-sm font-medium">Copyright © 2025. Desenvolvido por Fernando Lima</p>
   </div>
+</footer>
 
 
 
@@ -217,12 +256,12 @@
 <script src="https://unpkg.com/alpinejs" defer></script>
 
 <!-- Arquivo CSS-->
-  <link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="style.css">
 
 <!-- Swiper CSS -->
 <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-<!--ARQUIVO JAVASCRIPT-->
-<script src="JS/script.js"></script>
+<!--ARQUIVO JAVASCRIPT--> 
+<script src="JS\script.js"></script>
 
 <!--REFERENCIA LINK SWIPER--> 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
@@ -263,31 +302,6 @@
     update();
   });
 </script>
-
-
-<!-- MODAL DE VISUALIZAÇÃO -->
-<div id="imageModal" class="fixed inset-0 bg-black/80 hidden flex justify-center items-center p-4 z-50">
-  <span class="absolute top-6 right-8 text-white text-3xl cursor-pointer" onclick="closeImage()">×</span>
-  <img id="modalImg" class="max-w-3xl max-h-[90vh] w-auto rounded shadow-lg">
-</div>
-
-<script>
-function openImage(src) {
-  document.getElementById('modalImg').src = src;
-  document.getElementById('imageModal').classList.remove('hidden');
-  document.body.style.overflow = 'hidden'; // trava scroll
-}
-
-function closeImage() {
-  document.getElementById('imageModal').classList.add('hidden');
-  document.body.style.overflow = 'auto';
-}
-document.getElementById('imageModal').addEventListener('click', function(e) {
-  if (e.target.id === 'imageModal') closeImage();
-});
-
-</script>
-
 
 
 </body>
