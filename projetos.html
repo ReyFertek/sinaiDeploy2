@@ -82,10 +82,9 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
 
     <!-- IMAGEM 1 -->
-    <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" onclick="openImage('images/galeria/6.jpg')">
-      <img src="images/galeria/6.jpg" class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
+    <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" onclick="openImage('images/slider-main/bg1.jpg')">
+      <img src="images/slider-main/bg1.jpg" class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-lg font-medium transition-all duration-300">
-        Projeto 01
       </div>
     </div>
     <!-- IMAGEM 2 -->
@@ -130,23 +129,20 @@
 </section>
 
 
-<!-- Seção de Contato Rápido -->
 <section class="w-full">
   <div class="grid grid-cols-1 lg:grid-cols-2">
 
-    <!-- Lado esquerdo -->
     <div class="bg-[#FDB913] py-5 flex items-center justify-center text-center">
       <div>
         <h3 class="text-gray-900 text-lg font-semibold uppercase tracking-wide">
           Podemos ajudar?
         </h3>
         <h4 class="text-gray-900 text-3xl font-extrabold mt-1">
-          (51) xxxx-xxxx
+          (51) 3044-3102
         </h4>
       </div>
     </div>
 
-    <!-- Lado direito -->
     <div class="bg-[#2D2D2D] py-5 px-8 flex flex-col md:flex-row items-center justify-between gap-6">
       
       <div class="text-center md:text-left">
@@ -154,10 +150,9 @@
         <p class="text-gray-300 text-sm mt-2">Clique no botão ao lado e peça seu orçamento</p>
       </div>
 
-      <!-- WhatsApp Button -->
       <div class="flex justify-center items-center mt-3 md:mt-0">
-        <a href="https://wa.me/xxxx-xxxx" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold text-lg text-center px-8 py-4 rounded-lg">
-        💬 Falar no WhatsApp
+        <a href="https://wa.me/5551983452963?text=Olá!%20tenho%20um%20projeto%20e%20quero%20fazer%20um%20orçamento" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold text-lg text-center px-8 py-4 rounded-lg">
+        💬 Peça Seu Orçamento
         </a>
       </div>
 
@@ -167,15 +162,22 @@
   </div>
 </section>
 
+<a href="https://wa.me/5551983452963?text=Olá!%20Gostaria%20de%20mais%20informações" 
+   target="_blank"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 z-50">
+  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
 </main>
 
-<!-- Footer (rodapé completo)-->
 <footer class="bg-[#111] text-gray-300 py-16">
   <div class="container mx-auto px-6">
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-0 md:gap-x-20">
 
-      <!-- SOBRE NÓS -->
+
       <div>
         <h3 class="text-white text-lg font-semibold mb-4 flex items-center">
           <span class="w-1 h-5 bg-yellow-500 mr-2"></span> SOBRE NÓS
@@ -198,7 +200,6 @@
         </div>
       </div>
 
-      <!-- HORÁRIO -->
       <div>
         <h3 class="text-white text-lg font-semibold mb-4 flex items-center">
           <span class="w-1 h-5 bg-yellow-500 mr-2"></span> HORÁRIO DE FUNCIONAMENTO
@@ -215,18 +216,19 @@
         </p>
       </div>
 
-      <!-- CONTATOS -->
       <div>
         <h3 class="text-white text-lg font-semibold mb-4 flex items-center">
           <span class="w-1 h-5 bg-yellow-500 mr-2"></span> CONTATOS
         </h3>
 
         <p class="text-sm leading-relaxed">
-          Contato para pedidos e orçamentos:<br><br>
-          Residencial: <span class="font-semibold">(51) xxxx-xxxx</span><br>
-          Whatsapp: <span class="font-semibold">(51) xxxx-xxxx</span><br>
-          Whatsapp: <span class="font-semibold">(51) xxxx-xxxx</span><br>
-          E-mail: <span class="font-semibold">xxxxxxxx@xxxxx.xxxx</span>
+          Construtora e Empreiteira Sinai LTDA<br>
+          CNPJ: <span class="font-semibold">06.029.152/0001-01</span><br><br>
+          CONTATO PARA PEDIDOS DE ORÇAMENTO:<br><br>
+          Telefone Comercial: <span class="font-semibold">(51) 3044-3102</span><br>
+          Whatsapp: <span class="font-semibold">(51) 98345-2963</span><br>
+          Whatsapp: <span class="font-semibold">(51) 98139-6466</span><br>
+          E-mail: <span class="font-semibold">Sinai.pedras@gmail.com</span>
         </p>
       </div>
 
@@ -237,6 +239,8 @@
     <p class="text-black text-sm font-medium">Copyright © 2025. Desenvolvido por Fernando Lima</p>
   </div>
 </footer>
+
+
 
 
 
@@ -293,6 +297,30 @@
   });
 </script>
 
+<script>
+function openImage(src) {
+ 
+  const modal = document.createElement('div');
+  modal.className = 'fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4';
+  modal.onclick = () => modal.remove();
+  
+ 
+  const img = document.createElement('img');
+  img.src = src;
+  img.className = 'max-w-full max-h-full object-contain rounded-lg';
+  img.onclick = (e) => e.stopPropagation();
+  
+
+  const closeBtn = document.createElement('button');
+  closeBtn.innerHTML = '×';
+  closeBtn.className = 'absolute top-4 right-4 text-white text-4xl font-bold hover:text-gray-300';
+  closeBtn.onclick = () => modal.remove();
+  
+  modal.appendChild(img);
+  modal.appendChild(closeBtn);
+  document.body.appendChild(modal);
+}
+</script>
 
 </body>
 </html>
