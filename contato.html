@@ -71,8 +71,6 @@
   </div>
 </nav>
 
-
-<!-- CONTEÚDO -->
 <div class="text-center space-y-4 mb-12 px-10 p-12">
 <div class="text-center mb-10">
   <h1 class="text-5xl font-extrabold text-gray-900 gap-">
@@ -118,10 +116,8 @@
 <BR>
   <br>
 
-  <!-- 3 BLOCOS -->
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-20">
 
-    <!-- BLOCO 1 -->
     <div class="bg-white shadow-md rounded-lg p-6 text-center border-t-4 border-yellow-600">
       <div class="mx-auto w-14 h-14 rounded-full bg-yellow-600 flex items-center justify-center">
         <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -135,7 +131,6 @@
       <p class="ttext-lg font-bold text-gray-600 mt-1"><br>(51) 9 9735-1371<br><br> (51) 9 8065-4398</p>
     </div>
 
-    <!-- BLOCO 2 -->
     <div class="bg-white shadow-md rounded-lg p-6 text-center border-t-4 border-yellow-600">
       <div class="mx-auto w-14 h-14 rounded-full bg-yellow-600 flex items-center justify-center">
         <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -148,7 +143,6 @@
       <p class="text-lg font-bold text-gray-600 mt-1">(51) 3443-4669<br> <br>(51) 99735-1371</p>
     </div>
 
-    <!-- BLOCO 3 -->
     <div class="bg-white shadow-md rounded-lg p-6 text-center border-t-4 border-yellow-600">
       <div class="mx-auto w-14 h-14 rounded-full bg-yellow-600 flex items-center justify-center">
         <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -166,23 +160,20 @@
 </div>
 </body>
 
-<!-- Seção de Contato Rápido -->
 <section class="w-full">
   <div class="grid grid-cols-1 lg:grid-cols-2">
 
-    <!-- Lado esquerdo -->
     <div class="bg-[#FDB913] py-5 flex items-center justify-center text-center">
       <div>
         <h3 class="text-gray-900 text-lg font-semibold uppercase tracking-wide">
           Podemos ajudar?
         </h3>
         <h4 class="text-gray-900 text-3xl font-extrabold mt-1">
-          (51) xxxx-xxxx
+          (51) 3044-3102
         </h4>
       </div>
     </div>
 
-    <!-- Lado direito -->
     <div class="bg-[#2D2D2D] py-5 px-8 flex flex-col md:flex-row items-center justify-between gap-6">
       
       <div class="text-center md:text-left">
@@ -190,16 +181,12 @@
         <p class="text-gray-300 text-sm mt-2">Clique no botão ao lado e peça seu orçamento</p>
       </div>
 
-      <!-- WhatsApp Button -->
       <div class="flex justify-center items-center mt-3 md:mt-0">
-        <a href="https://wa.me/xxxx-xxxx" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold text-lg text-center px-8 py-4 rounded-lg">
+        <a href="https://wa.me/5551983452963" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold text-lg text-center px-8 py-4 rounded-lg">
         💬 Falar no WhatsApp
         </a>
       </div>
-
-
     </div>
-
   </div>
 </section>
 
@@ -209,7 +196,6 @@
   <div class="container mx-auto px-6">
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-0 md:gap-x-20">
-
 
       <div>
         <h3 class="text-white text-lg font-semibold mb-4 flex items-center">
@@ -326,6 +312,26 @@
 
     update();
   });
+</script>
+
+<script>
+function sendWhatsApp() {
+  const email = document.getElementById("email").value.trim();
+  const nome = document.getElementById("nome").value.trim();
+
+  if (!email || !nome) {
+    alert("Por favor, preencha o nome e o email.");
+    return;
+  }
+ 
+  const phoneNumber = "5551983452963";
+
+  const message = `Olá, meu nome é ${nome} e meu email é ${email}. Gostaria de entrar em contato.`;
+
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+}
 </script>
 
 
