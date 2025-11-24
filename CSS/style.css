@@ -16,14 +16,3 @@
   background-color: #e5a50d;
   color: #000;
 }
-
-    /* Reduce text size inside product modals to avoid scrolling */
-    .fixed.inset-0 > div.bg-white p,
-    .fixed.inset-0 > div.bg-white h1,
-    .fixed.inset-0 > div.bg-white h2,
-    .fixed.inset-0 > div.bg-white h3,
-    .fixed.inset-0 > div.bg-white span,
-    .fixed.inset-0 > div.bg-white p.font-bold,
-    .fixed.inset-0 > div.bg-white p.text-lg {
-      font-size: 0.85rem;
-    }
