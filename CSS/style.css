@@ -27,9 +27,3 @@
   width: 18px !important;
   height: 18px !important;
 }
-.swiper-pagination-bullet {
-  @apply w-4 h-4;
-}
-.swiper-pagination-bullet-active {
-  @apply w-5 h-5;
-}
