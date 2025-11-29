@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SINAI PEDRAS</title>
-  <link rel="icon" href="images/logo/favicon.png" type="favicon/png">
+  <link rel="icon" href="images/logo/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://sinai-deploy2.vercel.app">
+  <link rel="preload" 
+        href="https://unpkg.com/swiper@12.0.3/swiper-bundle.min.css" 
+        as="style" 
+        onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@12.0.3/swiper-bundle.min.css">
+  </noscript>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="tailwind/tailwind.css" rel="stylesheet">
-  <link rel="stylesheet" href="/tailwind.min.css">
-  <link rel="preload" href="https://unpkg.com/swiper@12.0.3/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@12.0.3/swiper-bundle.min.css">
-</noscript>
-
 </head>
 
 <body class="min-h-screen bg-gray-200">
@@ -89,9 +90,8 @@
   <div class="swiper-wrapper">
 
     <div class="swiper-slide relative">
-      <img src="images/catalogo/carossel/img1.webp" 
-           alt="Slide 1" 
-           class="absolute inset-0 w-full h-[600px] object-cover" />
+      <img 
+    src="images/catalogo/carossel/img1.webp" alt="Slide 1" fetchpriority="high" decoding="async" class="absolute inset-0 w-full h-[600px] object-cover"/>
       <div class="absolute inset-0 bg-black/10 flex flex-col justify-end items-center text-center text-white p-6 pb-35">
 
         <h2 class="text-base bg-black/30 font-bold mb-1 border border-gray-300 p-2">20 ANOS DE EXCELÊNCIA</h2>
