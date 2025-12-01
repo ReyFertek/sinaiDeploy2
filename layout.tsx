@@ -1,25 +1,16 @@
-import React from "react";
-import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-
-export const metadata = {
-  title: "Sinai Pedras",
-  description: "Descrição do site",
-};
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="pt-br">
-      <body>
-        {children}
-        <Analytics />
-        <SpeedInsights />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="pt-BR">
+            <body>
+                {children}
+                <Analytics />
+            </body>
+        </html>
+    );
 }
