@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.3.0",
     "ansi-regex": "^6.2.2",
     "ansi-styles": "^6.2.3",
     "any-promise": "^1.3.0",
