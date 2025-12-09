@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(229, 165, 13, 0.45); /* corrigido */
+  background: rgba(229, 165, 13, 0.45); 
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -17,7 +17,7 @@
 }
 
 .swiper-button-prev {
-  bottom: 80px; /* ajuste se quiser separar */
+  bottom: 80px;
 }
 
 .swiper-button-next:hover,
@@ -27,7 +27,7 @@
 }
 
 .swiper-pagination-bullet {
-  background: rgba(229, 165, 13, 0.45); /* corrigido */
+  background: rgba(229, 165, 13, 0.45);
   width: 10px !important;
   height: 10px !important;
   margin: 10px !important;
@@ -40,8 +40,7 @@
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 18px !important; /* controla o tamanho da seta */
-}
+  font-size: 18px !important; 
 
 }
 
